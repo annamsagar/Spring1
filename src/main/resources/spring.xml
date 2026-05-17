@@ -8,7 +8,9 @@
 
 <!--        <bean id="aliean" class="com.livein.Aliean" scope="prototype"></bean>-->
     <bean id="aliean" class="com.livein.Aliean" scope="singleton" autowire="byType">
-<!--        <property name="com" ref="com"></property>-->
+        <property name="com">
+            <bean id="com2" class="com.livein.Laptop" primary="true"></bean>
+        </property>
         <property name="age" value="21"></property>
 <!--        <constructor-arg type="int" value="21"/>-->
 <!--        <constructor-arg type="com.livein.Laptop" ref="lap1"/>-->
@@ -17,7 +19,6 @@
 <!--        <constructor-arg name="lap" ref="lap1"/>-->
 <!--        <constructor-arg name="age" value="21"/>-->
     </bean>
-    <bean id="com2" class="com.livein.Laptop" primary="true"></bean>
     <bean id="com1" class="com.livein.Desktop" lazy-init="true"/>
 
 </beans>

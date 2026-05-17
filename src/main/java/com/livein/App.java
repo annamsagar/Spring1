@@ -14,6 +14,6 @@ public class App
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
         Aliean a1=context.getBean("aliean",Aliean.class);
         a1.code();
-        Computer c1=context.getBean("computer",Computer.class);
+//        Computer c1=context.getBean("computer",Computer.class);
     }
 }
