@@ -1,5 +1,7 @@
 package com.livein;
 
+import java.beans.ConstructorProperties;
+
 public class Aliean {
 
     int age;
@@ -7,7 +9,11 @@ public class Aliean {
     Aliean(){
         System.out.println("Aliean object created");
     }
-
+//    @ConstructorProperties({"age","lap"})
+    Aliean(int age,Laptop lap){
+        this.age=age;
+        this.lap=lap;
+    }
     public int getAge() {
         return age;
     }
