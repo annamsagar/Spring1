@@ -1,6 +1,8 @@
 package com.livein;
 
 public class Aliean {
+
+    int age;
     Aliean(){
         System.out.println("Aliean object created");
     }

@@ -13,6 +13,9 @@ public class App
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
         Aliean a1=(Aliean)context.getBean("aliean");
-        a1.code();
+        a1.age=25;
+        System.out.println(a1.age);
+        Aliean a2=(Aliean)context.getBean("aliean");
+        System.out.println(a2.age);
     }
 }
