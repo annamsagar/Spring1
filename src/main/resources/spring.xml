@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
-        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
-<beans>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
 <!--        <bean id="aliean" class="com.livein.Aliean" scope="prototype"></bean>-->
-    <bean id="aliean" class="com.livein.Aliean" scope="singleton">
-<!--        <property name="age" value="21"></property>-->
-<!--        <property name="lap" ref="lap1"></property>-->
+    <bean id="aliean" class="com.livein.Aliean" scope="singleton" autowire="byType">
+<!--        <property name="com" ref="lap1"></property>-->
+        <property name="age" value="21"></property>
 <!--        <constructor-arg type="int" value="21"/>-->
 <!--        <constructor-arg type="com.livein.Laptop" ref="lap1"/>-->
-        <constructor-arg index="0" value="26"/>
-        <constructor-arg index="1" ref="lap1"/>
+<!--        <constructor-arg index="0" value="26"/>-->
+<!--        <constructor-arg index="1" ref="lap1"/>-->
 <!--        <constructor-arg name="lap" ref="lap1"/>-->
 <!--        <constructor-arg name="age" value="21"/>-->
     </bean>
-    <bean id="lap1" class="com.livein.Laptop"></bean>
+<!--    <bean id="com" class="com.livein.Laptop"></bean>-->
+    <bean id="com1" class="com.livein.Desktop"/>
+
 </beans>

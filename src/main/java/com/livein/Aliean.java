@@ -5,15 +5,15 @@ import java.beans.ConstructorProperties;
 public class Aliean {
 
     int age;
-    Laptop lap;
+    Computer com;
     Aliean(){
         System.out.println("Aliean object created");
     }
-//    @ConstructorProperties({"age","lap"})
-    Aliean(int age,Laptop lap){
-        this.age=age;
-        this.lap=lap;
-    }
+////    @ConstructorProperties({"age","lap"})
+//    Aliean(int age,Laptop lap){
+//        this.age=age;
+//        this.lap=lap;
+//    }
     public int getAge() {
         return age;
     }
@@ -23,16 +23,16 @@ public class Aliean {
         this.age = age;
     }
 
-    public Laptop getLap() {
-        return lap;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLap(Laptop lap) {
-        this.lap = lap;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public void code(){
         System.out.println("coding");
-        lap.compile();
+        com.compile();
     }
 }
