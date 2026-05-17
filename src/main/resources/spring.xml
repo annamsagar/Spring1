@@ -4,4 +4,5 @@
 
 <beans>
     <bean id="aliean" class="com.livein.Aliean"></bean>
+    <bean id="lap" class="com.livein.Laptop"></bean>
 </beans>
