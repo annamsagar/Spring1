@@ -17,7 +17,7 @@
 <!--        <constructor-arg name="lap" ref="lap1"/>-->
 <!--        <constructor-arg name="age" value="21"/>-->
     </bean>
-<!--    <bean id="com" class="com.livein.Laptop"></bean>-->
-    <bean id="com1" class="com.livein.Desktop"/>
+    <bean id="com" class="com.livein.Laptop"></bean>
+    <bean id="com1" class="com.livein.Desktop" primary="true"/>
 
 </beans>
