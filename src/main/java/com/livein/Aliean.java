@@ -6,7 +6,7 @@ public class Aliean {
 
     int age;
     Computer com;
-    Aliean(){
+    public Aliean(){
         System.out.println("Aliean object created");
     }
 ////    @ConstructorProperties({"age","lap"})

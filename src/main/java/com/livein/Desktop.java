@@ -1,7 +1,7 @@
 package com.livein;
 
 public class Desktop implements Computer {
-    Desktop(){{
+    public Desktop(){{
     System.out.println("Desktop object created");}
     }
     @Override
