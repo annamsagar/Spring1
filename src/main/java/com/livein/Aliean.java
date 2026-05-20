@@ -1,10 +1,18 @@
 package com.livein;
 
-import java.beans.ConstructorProperties;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+import java.beans.ConstructorProperties;
+@Component
 public class Aliean {
 
+    @Value("23")
     int age;
+//    @Autowired
+//            @Qualifier("desktop")
     Computer com;
     public Aliean(){
         System.out.println("Aliean object created");
@@ -26,7 +34,8 @@ public class Aliean {
     public Computer getCom() {
         return com;
     }
-
+    @Autowired
+    @Qualifier("laptop")
     public void setCom(Computer com) {
         this.com = com;
     }
